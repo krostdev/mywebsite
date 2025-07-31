@@ -1,0 +1,48 @@
+{
+    "skills": [
+        {
+            "name": "Visual Studio Code",
+            "icon": "BiLogoVisualStudio",
+            "tag": [
+                "Workspace"
+            ],
+            "description": "O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado na área de trabalho e está disponível para Windows, macOS e Linux.",
+            "link": "//code.visualstudio.com"
+        },
+        {
+            "name": "HTML5",
+            "icon": "BiLogoHtml5",
+            "tag": "Tecnologias & FrontEnd",
+            "description": "HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.",
+            "link": "//developer.mozilla.org/pt-BR/docs/Web/HTML"
+        },
+        {
+            "name": "CSS3",
+            "icon": "BiLogoCss3",
+            "tag": "Tecnologias & FrontEnd",
+            "description": "CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou em XML.",
+            "link": "//developer.mozilla.org/pt-BR/docs/Web/CSS"
+        },
+        {
+            "name": "ReactJS",
+            "icon": "BiLogoReact",
+            "tag": "Tecnologias & FrontEnd",
+            "description": "O React (também denominado React.js ou ReactJS) é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
+            "link": "//react.dev"
+        },
+        {
+            "name": "NodeJS",
+            "icon": "BiLogoNodejs",
+            "tag": "Tecnologias & BackEnd",
+            "description": "Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.",
+            "link": "//nodejs.org/pt"
+        },
+        {
+            "name": "Python",
+            "icon": "BiLogoPython",
+            "tag": "Tecnologias & BackEnd",
+            "description": "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.",
+            "link": "//python.org"
+        }
+    ]
+}

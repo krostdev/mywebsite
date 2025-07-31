@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+header {
+    color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+
+    background-color: #1F1D35;
+
+    height: 4rem;
+    width: 100%;
+
+    align-items: center;
+
+    display: inline-flex;
+
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.name__easteregg {
+    position: relative;
+    bottom: 17px;
+    left: 13px;
+
+    font-size: 12px;
+
+    visibility: hidden;
+    transition: all ease-in-out 1s;
+
+    cursor: pointer;
+
+    color: gold;
+}
+
+header:hover {
+    .name__easteregg {
+        visibility: visible;
+    }
+}
+
+.routes__item {
+    margin-right: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.routes__item::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ff6347;
+  transition: width 0.3s;
+}
+
+.routes__item:hover::after {
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: color 0.3s;
+
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.social__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ff6347;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.social__link:hover::before {
+  transform: translateX(0);
+}
+
+.social__link:hover {
+  color: #ff6347;
+}
