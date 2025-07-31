@@ -43,6 +43,13 @@
             "tag": "Tecnologias & BackEnd",
             "description": "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.",
             "link": "//python.org"
+        },
+        {
+            "name": "MongoDB",
+            "icon": "BiLogoMongodb",
+            "tag": "Banco de Dados",
+            "description":"MongoDB é um banco de dados NoSQL popular e de código aberto que utiliza um modelo de dados flexível e orientado a documentos.",
+            "link": "//www.mongodb.com"
         }
     ]
 }
