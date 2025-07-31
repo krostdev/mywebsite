@@ -106,3 +106,9 @@ header:hover {
 .social__link:hover {
   color: #ff6347;
 }
+
+@media only screen and (max-width: 600px) {
+  .routes {
+    display: none;
+  }
+}

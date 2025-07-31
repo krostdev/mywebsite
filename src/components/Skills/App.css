@@ -93,3 +93,18 @@
     padding: 15px;
     color: #f1f1f1c9;
 }
+
+@media only screen and (max-width: 600px) {
+  .skill_card {
+    width: auto;
+    max-width: 15rem;
+  }
+
+  .skill_icon {
+    display: none;
+  }
+
+  .skills__title {
+    font-size: 20px;
+  }
+}

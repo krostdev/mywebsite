@@ -1,5 +1,5 @@
 import { toast, ToastContainer } from 'react-toastify';
-import { FaCrown, FaInstagram, FaDiscord, FaGithub } from 'react-icons/fa6';
+import { FaCrown, FaInstagram, FaDiscord, FaGithub, FaGit } from 'react-icons/fa6';
 
 import './App.css';
 
@@ -26,9 +26,17 @@ function Header() {
         </div>
 
         <div className="social">
-            <FaDiscord className='social__link'/>
-            <FaGithub className='social__link'/>
-            <FaInstagram className='social__link'/>
+            <a target='_blank' href="https://discord.com/channels/@me/1186786998292336701">
+                <FaDiscord className='social__link'/>
+            </a>
+
+            <a target='_blank' href="https://github.com/krostdev/">
+                <FaGithub className='social__link'/>
+            </a>
+
+            <a target='_blank' href="https://www.instagram.com/augustokauanp/">
+                <FaInstagram className='social__link'/>
+            </a>
         </div>
     </header>
   )
