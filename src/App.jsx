@@ -1,5 +1,6 @@
 import Header from './components/Header/App';
 import Skills from './components/Skills/App';
+import Contato from './components/Contato/App';
 
 import { toast, ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
@@ -15,16 +16,18 @@ function App() {
         style: {
             color: "#000",
             marginBottom: "7px",
-            fontSize: "18px"
+            fontSize: "18px",
+            display: "none"
         }
     })
   },[])
 
   return (
     <>
-    <ToastContainer/>
-    <Header/>
-    <Skills/>
+      <ToastContainer/>
+      <Header/>
+      <Skills/>
+      <Contato/>
     </>
   )
 }

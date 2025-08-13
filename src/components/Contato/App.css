@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.contact__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    height: auto;
+    min-height: 90vh;
+    color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact__title {
+    font-size: 28px;
+}
+
+.contact__card {
+    display: flex;
+    width: auto;
+
+    min-width: 70%;
+    max-width: 90%;
+    background-color: #1F1D35;
+    height: 30rem;
+
+    padding: 1.2rem;
+    margin-top: 2rem;
+
+    border: 2px solid #ff634754;
+    border-radius: 10px;
+
+    font-family: "JetBrains Mono";
+}
+
+.contact_left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_subtitle {
+    font-weight: 500;
+    font-size: 26px;
+
+    letter-spacing: -1px;
+}
+
+.contact_info {
+    padding-top: 4rem;
+    width: 80%;
+}
+
+.contact_links {
+    padding-top: 4rem;
+}
+
+.contact_right {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    padding-top: 2%;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.row.side-by-side {
+    display: flex;
+    gap: 3rem;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact_input {
+    max-width: 98%;
+    height: 2rem;
+    padding: 5px;
+
+    outline: none;
+    border: 1px solid #ff634754;
+    border-radius: 10px;
+
+    background-color: #18122A;
+    color: #f1f1f1;
+    
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+.contact_textarea {
+    resize: none;
+    height: 8rem;
+}
+
+.input_submit {
+    padding: 12px;
+    width: 100%;
+
+    background-color: #FF6347;
+    border: 2px solid #FF6347;
+    border-radius: 4px;
+
+    color: #f1f1f1;
+    transition: all ease 0.6s;
+
+    cursor: pointer;
+}
+
+.input_submit:hover {
+    transform: scale(1.02);
+}
