@@ -99,10 +99,12 @@
   .skill_card {
     width: auto;
     max-width: 15rem;
+
+    height: auto;
   }
 
   .skill_icon {
-    display: none;
+    font-size: 36px;
   }
 
   .skills__title {
