@@ -75,7 +75,7 @@ function Contato() {
                     </span>
 
                     <span className="contact_info">
-                        Ao enviar este formulário, você será respondido em até 24 horas, caso queira formas de entrar em contato mais rápido, utilize redes sociais como <a href="">instagram</a>, e outros localizados nos icones abaixo.
+                        Ao enviar este formulário, você será respondido em até 24 horas, caso queira formas de entrar em contato mais rápido, utilize redes sociais como <a href="https://www.instagram.com/augustokauanp/" style={{ color: "#FF6347" }}>instagram</a>, e outros localizados nos icones abaixo.
                     </span>
 
                     <div className="contact_links">
