@@ -46,6 +46,18 @@ function Contato() {
             setMsg("")
 
             notify()
+        }).catch(err => {
+            toast("Algo deu errado", { type: "error" })
+
+            const errorWebhook = new Webhook("https://discord.com/api/webhooks/1405549163349020793/1iQpxt1Z4u1-MOMCS24H-xdh_z-j0bSzoVvkzuZUZhm5qnr0OfO4eLL-kSitwANFwiwt");
+            
+            errorWebhook.setUsername("KroST | Errors")
+            
+            const embed = new MessageBuilder()
+            .setDescription(`⚠️ **Erro Recebido (Formulário)**\n\n\`\`\`${err}\`\`\``)
+            .setTimestamp();
+
+            errorWebhook.send(embed).catch()
         })
     }
 
@@ -86,7 +98,7 @@ function Contato() {
                     <div className="contact_form" action="/" method="post">
 
                         <div className="row side-by-side">
-                            <div className="input_group">
+                            <div className="input_group input_name">
                                 <label htmlFor="nome">Nome</label>
                                 <input onChange={(e) => { setNome(e.target.value) }} value={nome} className="contact_input" type="text" name="nome" id="nome" placeholder="Seu nome..." />
                             </div>

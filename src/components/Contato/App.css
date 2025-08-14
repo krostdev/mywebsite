@@ -29,7 +29,7 @@
     border: 2px solid #ff634754;
     border-radius: 10px;
 
-    font-family: "JetBrains Mono";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact_left {
@@ -43,7 +43,7 @@
 
 .contact_subtitle {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 28px;
 
     letter-spacing: -1px;
 }
@@ -119,4 +119,29 @@ label {
 
 .input_submit:hover {
     transform: scale(1.02);
+}
+
+@media only screen and (max-width: 800px) {
+    .contact__card {
+        width: auto;
+        max-width: 80%;
+        display: block;
+        height: auto;
+    }
+
+    .contact_left, .contact_right {
+        width: 100%;
+    }
+
+    .input_name {
+        padding-bottom: 1.2rem;
+    }
+
+    .row.side-by-side {
+        display: block;
+    }
+
+    .contact_left {
+        margin: 1rem 0;
+    }
 }
