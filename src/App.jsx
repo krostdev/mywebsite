@@ -1,6 +1,7 @@
 import Header from './components/Header/App';
 import Skills from './components/Skills/App';
 import Contato from './components/Contato/App';
+import Description from './components/Description/App'
 
 import { toast, ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
@@ -26,6 +27,7 @@ function App() {
     <>
       <ToastContainer/>
       <Header/>
+      <Description/>
       <Skills/>
       <Contato/>
     </>

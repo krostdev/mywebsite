@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.description_section {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.description__div {
+    margin-top: -4rem;
+    text-align: center;
+}
+
+.description__name {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #f1f1f1;
+    font-size: 2rem;
+    width: 0ch;
+    animation: typing 10s steps(16, end) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    40% {
+        width: 16ch;
+    }
+    85% {
+        width: 16ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.description__buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 1.5rem;
+}
+
+.desc__button {
+    text-decoration: none;
+
+    margin-top: 2rem;
+    color: #f1f1f1;
+}
+
+.desc__button.btn_project {
+    background-color: #FF6347;
+    padding: 8px 22px;
+
+    border-radius: 6px;
+    border: #ae4c3b 1px solid;
+
+    transition: .2s ease;
+}
+
+.desc__button.btn_project:hover {
+    background-color: #ae4c3b;
+}
+
+.desc__button.btn_contact {
+    border: 1px solid #FF6347;
+    padding: 8px 22px;
+
+    border-radius: 6px;
+
+    transition: .2s ease;
+}
+
+.desc__button.btn_contact:hover {
+    background-color: #ff63478a;
+}
+
+.description__arrowIcon {
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    font-size: 36px;
+    
+    padding-top: 5rem;
+
+    animation: cloud infinite 1s ease-in-out;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}

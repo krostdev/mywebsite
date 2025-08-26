@@ -21,8 +21,8 @@ function Header() {
         </div>
 
         <div className="routes">
-            <span className='routes__item'>Projetos</span>
-            <span className='routes__item'>Contato</span>
+            <a className='routes__item'>Projetos</a>
+            <a href='#contact__section' className='routes__item'>Contato</a>
         </div>
 
         <div className="social">

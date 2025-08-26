@@ -2,13 +2,14 @@ import { FaInstagram, FaDiscord } from 'react-icons/fa6';
 import { IoMailOutline } from "react-icons/io5";
 
 import { MessageBuilder, Webhook } from 'discord-webhook-node';
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
 import { toast, ToastContainer } from 'react-toastify';
 
 import './App.css';
 
 function Contato() {
+    const buttonComponent = useRef(null);
 
     const notify = () => toast("Mensagem enviada com sucesso", {
         type: "success"
@@ -24,6 +25,7 @@ function Contato() {
     const [msg, setMsg] = useState('');
 
     const sendWebhook = () => {
+
         const hook = new Webhook("https://discord.com/api/webhooks/1405220318578086018/jetW-fpKfDcTSGxI7y6UrmJVpkgxNdC7kY73madZf7cIA3WrI8qk-gl1SXCKWe7U7VWP")
         hook.setUsername('KroST | Formulário Recebido')
 
@@ -39,30 +41,32 @@ function Contato() {
             .addField(`Mensagem:`, `${msg}`)
             .setTimestamp();
 
-        hook.send(embed).then(() => {
+        try {
+            hook.send(embed)
             setNome("")
             setAssunto("")
             setEmail("")
             setMsg("")
 
             notify()
-        }).catch(err => {
+
+        } catch (err) {
             toast("Algo deu errado", { type: "error" })
 
             const errorWebhook = new Webhook("https://discord.com/api/webhooks/1405549163349020793/1iQpxt1Z4u1-MOMCS24H-xdh_z-j0bSzoVvkzuZUZhm5qnr0OfO4eLL-kSitwANFwiwt");
-            
+
             errorWebhook.setUsername("KroST | Errors")
-            
+
             const embed = new MessageBuilder()
-            .setDescription(`⚠️ **Erro Recebido (Formulário)**\n\n\`\`\`${err}\`\`\``)
-            .setTimestamp();
+                .setDescription(`⚠️ **Erro Recebido (Formulário)**\n\n\`\`\`${err}\`\`\``)
+                .setTimestamp();
 
             errorWebhook.send(embed).catch()
-        })
+        }
     }
 
     return (
-        <section className="contact__section">
+        <section id='contact__section' className="contact__section">
             <ToastContainer />
             <h1 className="contact__title">
                 Contato
@@ -116,10 +120,10 @@ function Contato() {
 
                         <div className="input_group">
                             <label htmlFor="mensagem">Mensagem</label>
-                            <textarea onChange={(e) => { setMsg(e.target.value) }} value={msg} className="contact_input contact_textarea" name="mensagem" id="mensagem" placeholder="O você tem em mente?" />
+                            <textarea onChange={(e) => { setMsg(e.target.value) }} value={msg} className="contact_input contact_textarea" name="mensagem" id="mensagem" placeholder="O que você tem em mente?" />
                         </div>
 
-                        <button className='input_submit' onClick={sendWebhook}>Enviar Formulário</button>
+                        <button ref={buttonComponent} className='input_submit' onClick={sendWebhook}>Enviar Formulário</button>
 
                     </div>
                 </div>
