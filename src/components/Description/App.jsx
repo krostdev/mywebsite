@@ -8,7 +8,7 @@ function Description() {
             <div className="description__div">
                 <h1 className="description__name">Augusto Kauan...</h1>
                 <span className="description__desc">
-                    Eu sou o <span style={{ color: "#ff775fff", fontWeight: "bold" }}>Augusto</span>, um jovem de 16 anos, trilhando seu caminho na carreira web...
+                    Eu sou o <span style={{ color: "#ff775fff", fontWeight: "bold" }}>Augusto</span>, um jovem de 17 anos, trilhando seu caminho na carreira web...
                 </span>
 
                 <div className="description__buttons">
