@@ -69,7 +69,7 @@ function Contato() {
         <section id='contact__section' className="contact__section">
             <ToastContainer />
             <h1 className="contact__title">
-                Contato
+                Contato (Em correção)
             </h1>
 
             <div className="contact__card">
