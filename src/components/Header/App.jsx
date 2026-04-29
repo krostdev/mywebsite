@@ -21,7 +21,7 @@ function Header() {
         </div>
 
         <div className="routes">
-            <a className='routes__item'>Projetos</a>
+            <a href='https://github.com/krostdev?tab=repositories' target='_blank' className='routes__item'>Projetos</a>
             <a href='#contact__section' className='routes__item'>Contato</a>
         </div>
 
