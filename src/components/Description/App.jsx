@@ -12,8 +12,8 @@ function Description() {
                 </span>
 
                 <div className="description__buttons">
-                    <a className="desc__button btn_project" href="/" target="_blank" rel="noopener noreferrer">Ver projetos</a>
-                    <a className="desc__button btn_contact" href="/" target="_blank" rel="noopener noreferrer">Entrar em contato</a>
+                    <a className="desc__button btn_project" href="https://github.com/krostdev?tab=repositories" target="_blank" rel="noopener noreferrer">Ver projetos</a>
+                    <a className="desc__button btn_contact" href="https://www.instagram.com/augustokauanp/" target="_blank" rel="noopener noreferrer">Entrar em contato</a>
                 </div>
 
                 <MdKeyboardDoubleArrowDown className="description__arrowIcon" onClick={() => { window.location.href = "/" }}/>
